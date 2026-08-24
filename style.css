@@ -1,0 +1,143 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  background: linear-gradient(298deg, #0a8efa 0%, #5ed466 49%, #00ffc8 100%);
+  display: flex;
+  font-family: "Dosis", sans-serif;
+  font-display: swap;
+  height: inherit;
+  justify-content: center;
+}
+
+.wrapper {
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+  color: #232323;
+  backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  flex-basis: 400px;
+  height: 600px;
+  padding: 20px 35px;
+}
+
+.laganda-logo {
+  width: 30%;
+  margin-bottom: 10px;
+  transition: transform 0.4s ease;
+}
+
+.laganda-logo:hover {
+  transform: scale(1.1);
+}
+
+.screen {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.105);
+  color: #232323;
+  font-size: 35px;
+  font-weight: 700;
+  overflow-x: auto;
+  padding: 20px;
+  text-align: right;
+  white-space: nowrap;
+  width: 326px;
+  transition: all 0.2s ease;
+}
+
+.screen:hover {
+  transform: scale(1.02);
+}
+
+.screen {
+  scrollbar-width: none;
+}
+
+.screen::-webkit-scrollbar {
+  display: none;
+}
+
+.calc-button-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 0;
+}
+
+.calc-button {
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+  color: #232323;
+  align-items: center;
+  display: flex;
+  flex-basis: 20%;
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 600;
+  height: 65px;
+  justify-content: center;
+  padding: 0;
+  transition:
+    background-color,
+    transform 0.1s ease-in-out;
+}
+
+.calc-button:last-child {
+  background-color: orange;
+  color: white;
+}
+
+.calc-button:last-child:hover {
+  background-color: inherit;
+  color: inherit;
+}
+
+.calc-button:hover {
+  background-color: inherit;
+  transform: scale(1.05);
+}
+
+.calc-button:active,
+.calc-button:last-child:active {
+  background-color: #59fdbb66;
+  transform: scale(0.97);
+}
+
+.double {
+  flex-basis: 47%;
+}
+
+.triple {
+  flex-basis: 73%;
+}
+
+.footer-name {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  color: white;
+  filter: blur(1px);
+}
